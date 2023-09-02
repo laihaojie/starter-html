@@ -1,5 +1,5 @@
 import './style.css'
-import 'uno.css'
+import 'virtual:uno.css'
 import typescriptLogo from './typescript.svg'
 import { setupCounter } from './counter'
 

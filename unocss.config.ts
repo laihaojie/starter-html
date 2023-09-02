@@ -1,11 +1,10 @@
 import {
   defineConfig,
-  presetAttributify,
-  presetIcons,
-  presetUno,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+
+import { presetWeb } from '@djie/unocss'
 
 export default defineConfig({
   shortcuts: [
@@ -14,12 +13,7 @@ export default defineConfig({
     ['fc', 'flex items-center justify-center'],
   ],
   presets: [
-    presetUno(),
-    presetAttributify(),
-    presetIcons({
-      scale: 1.2,
-      warn: true,
-    }),
+    presetWeb({ unit: 'px' }),
   ],
   transformers: [
     transformerDirectives(),
